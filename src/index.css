@@ -55,13 +55,13 @@ b
 #Slider
 {
 	width: 0px;
-	height: 98%;
+	height: 97%;
 
 	background-color: var(--highlight-color);
 
 	z-index: -1;
 	left: 20%;
-	top: 1%;
+	top: 2%;
 	position: absolute;
     animation: slideIn 4s 1 0s ease-out forwards;
 }
