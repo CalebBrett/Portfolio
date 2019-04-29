@@ -33,7 +33,7 @@ class Title extends React.Component
 		return(
 			<div id="TitleBar">
 				<div id="Slider"></div>
-				<img id="TitleImage" src="../Images/Title.svg" alt="NO"></img>
+				<img id="TitleImage" src="./Images/Title.svg" alt="NO"></img>
 			</div>
 		);
 	}
@@ -64,13 +64,13 @@ class About extends React.Component
 			<div id="About-Section">
 				<Particles className='particles' params={particleOptions}/>
 				<div id="About">
-					<img id="portrait" src="../Images/Portrait.png" alt=""/>
+					<img id="portrait" src="./Images/Portrait.png" alt=""/>
 					<h1><u>About Me</u></h1>
 					<p>I am a <b>Mechatronics Engineering</b> student at the University of Waterloo. I have <br/><b>7 years</b> of programming experience, most of which is self-taught. I am a skilled <b>full stack and desktop developer</b>. I can use a variety of programming languages including <b>Java, C#, C++, Visual Basic, Javascript, SQL and many more</b>. I am also interested in hardware, so I have created many circuits from scratch as well as with microcontrollers such as Arduino. I enjoy playing a variety of sports and outdoor activities. My favorites are sailing, surfing, running, skiing and camping. I am always looking for opportunities to expand my knowledge and <b>learn new things</b>. Currently, I am focusing on gaining more experience with <b>Mechanical Design</b> and <b>Hardware</b>. I am a passionate, enthusiastic, problem solver with excellent collaborative and interpersonal skills.</p>
 					<div id="Links">
-						<button onClick={this.goToProjects}><img src="../Images/arrow.svg" alt=""/>   Projects</button>
-						<button onClick={this.goToGithub}><img src="../Images/github.svg" alt=""/>   GitHub</button>
-						<button onClick={this.goToLinkedIn}><img src="../Images/linkedin.svg" alt=""/>   LinkedIn</button>
+						<button onClick={this.goToProjects}><img src="./Images/arrow.svg" alt=""/>   Projects</button>
+						<button onClick={this.goToGithub}><img src="./Images/github.svg" alt=""/>   GitHub</button>
+						<button onClick={this.goToLinkedIn}><img src="./Images/linkedin.svg" alt=""/>   LinkedIn</button>
 					</div>
 				</div>
 			</div>
@@ -122,9 +122,9 @@ function displayMedia(name, mediaStyle, extension)
 	if(extension != null)
 	{		
 		if(name === "Chess Robot")
-			return <ReactPlayer height="30vw" width="30%" style={mediaStyle} alt="" url={"../Images/" + name + extension} playing loop controls muted/>;
+			return <ReactPlayer height="30vw" width="30%" style={mediaStyle} alt="" url={"./Images/" + name + extension} playing loop controls muted/>;
 		else
-			return <img id={name + "-img"} width="30%" style={mediaStyle} src={"../Images/" + name + extension} alt=""/>
+			return <img id={name + "-img"} width="30%" style={mediaStyle} src={"./Images/" + name + extension} alt=""/>
 	}
 }
 
