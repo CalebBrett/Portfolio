@@ -55,19 +55,20 @@ b
 #Slider
 {
 	width: 0px;
-	height: 99%;
+	height: 98%;
 
 	background-color: var(--highlight-color);
 
 	z-index: -1;
-	left: 50px;
+	left: 20%;
+	top: 1%;
 	position: absolute;
     animation: slideIn 4s 1 0s ease-out forwards;
 }
 
 @keyframes slideIn{
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 60%;}
 }
 
 #About-Section{
