@@ -10,7 +10,6 @@ class Document extends React.Component
 	{
 		return(
 			<div className="document">
-			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
 				<Title/>
 				<About/>
 				<ContentList data={[
