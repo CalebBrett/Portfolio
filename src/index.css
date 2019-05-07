@@ -25,6 +25,11 @@ a
 	font-weight: bold;
 }
 
+a:hover
+{
+	color: var(--highlight-color);
+}
+
 u
 {
 	text-underline-position: under;
