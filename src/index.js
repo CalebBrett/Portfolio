@@ -32,7 +32,7 @@ class Title extends React.Component
 		return(
 			<div id="TitleBar">
 				<div id="Slider"></div>
-				<img id="TitleImage" src="./Images/Title.svg" alt="NO"></img>
+				<img id="TitleImage" src="./Images/Title.svg" alt=""></img>
 			</div>
 		);
 	}

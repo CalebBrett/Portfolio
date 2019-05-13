@@ -8,14 +8,14 @@ body
 	background-color: var(--bg-color);
 	color: var(--txt-color);
 	margin: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', "Helvetica Neue", "Lucida Grande", sans-serif;
 	font-size: 1.2vw;
 }
 
 pre
 {
 	color: var(--txt-color);
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', "Helvetica Neue", "Lucida Grande", sans-serif;
 	font-size: 1.2vw;
 }
 
@@ -70,7 +70,7 @@ b
 	left: 20%;
 	top: 2%;
 	position: absolute;
-    animation: slideIn 4s 1 0s ease-out forwards;
+    animation: slideIn 4s 1 0.5s ease-out forwards;
 }
 
 @keyframes slideIn
