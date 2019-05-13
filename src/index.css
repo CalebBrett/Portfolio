@@ -10,8 +10,6 @@ body
 	margin: 0px;
 	font-family: 'Open Sans', "Helvetica Neue", "Lucida Grande", sans-serif;
 	font-size: 1.2vw;
-	text-rendering: optimizeLegibility;
-	letter-spacing: 0.025em;
 }
 
 pre
@@ -40,7 +38,6 @@ u
 b
 {
 	color: var(--highlight-color);
-	letter-spacing: 0.025em;
 }
 
 .document 
