@@ -40,6 +40,7 @@ u
 b
 {
 	color: var(--highlight-color);
+	letter-spacing: 0.025em;
 }
 
 .document 
