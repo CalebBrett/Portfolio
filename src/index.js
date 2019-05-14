@@ -63,7 +63,7 @@ class About extends React.Component
 			<div id="About-Section">
 				<Particles className='particles' params={particleOptions}/>
 				<div id="About">
-					<img id="portrait" src="./Images/Portrait.png" alt=""/>
+					<img id="portrait" src="./Images/Portrait.jpg" alt=""/>
 					<h1><u>About Me</u></h1>
 					<p>I am a <b>Mechatronics Engineering</b> student at the University of Waterloo. I have <b>7&nbsp;years</b> of programming experience, most of which is self-taught. I am a skilled <b>full stack and desktop developer</b>. I can use a variety of programming languages including <b>Java, C#, C++, Visual Basic, Javascript, SQL and many more</b>. I am also interested in hardware, so I have created many circuits from scratch as well as with microcontrollers such as Arduino. I enjoy playing a variety of sports and outdoor activities. My favorites are sailing, surfing, running, skiing and camping. I am always looking for opportunities to expand my knowledge and <b>learn new things</b>. Currently, I am focusing on gaining more experience with <b>Mechanical Design</b> and <b>Hardware</b>. I am a passionate, enthusiastic, problem solver with excellent collaborative and interpersonal skills.</p>
 					<div id="Links">
