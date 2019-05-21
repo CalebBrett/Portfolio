@@ -6,7 +6,6 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
-    "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.7.0",
     "react-particles-js": "^2.6.0",
     "react-player": "^1.9.3",
