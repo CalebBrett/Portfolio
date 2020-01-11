@@ -1,7 +1,7 @@
 {
   "name": "react-try",
   "version": "0.1.0",
-  "homepage": "http://calebbrett.github.io/Personal-Website",
+  "homepage": "http://calebbrett.ca",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
