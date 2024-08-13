@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "install": "^0.13.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-particles-js": "^2.6.0",

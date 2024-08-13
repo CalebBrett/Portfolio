@@ -1,9 +1,12 @@
-body
-{
-	--bg-color: #000000;
-	--txt-color: #FFFFFF;
-	--highlight-color: #FF6600;
-	--alt-color: #B80C09;
+body {
+	/* --bg-color: #000000; */
+	/* --txt-color: #FFFFFF; */
+	/* --highlight-color: #FF6600; */
+	/* --alt-color: #B80C09; */
+	--bg-color: #990D35;
+	--txt-color: #FFF8E8;
+	--highlight-color: #D52941;
+	--alt-color: #FCD581;
 
 	background-color: var(--bg-color);
 	color: var(--txt-color);
@@ -12,55 +15,81 @@ body
 	font-size: 1.2vw;
 }
 
-pre
-{
+pre {
 	color: var(--txt-color);
 	font-family: 'Open Sans', "Helvetica Neue", "Lucida Grande", sans-serif;
 	font-size: 1.2vw;
 }
 
-a
-{
+a {
 	color: var(--alt-color);
 	font-weight: bold;
 }
 
-a:hover
-{
+a:hover {
 	color: var(--highlight-color);
 }
 
-u
-{
+u {
 	text-underline-position: under;
 }
 
-b
-{
+b {
+	color: var(--alt-color);
+}
+
+.document {
+	height: 100%;
+	width: 100%;
+}
+
+#page {
+	width: 90%;
+	margin-left: 10%;
+}
+
+.sideBar {
+	width: 10%;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	z-index: 99;
+	border-right: solid 5px var(--alt-color);
+}
+
+.sideBar a {
+	display: block;
+	padding: 16px;
+	text-decoration: underline;
+	background-color: var(--highlight-color);
+}
+
+.sideBar a:hover {
+	background-color: var(--alt-color);
 	color: var(--highlight-color);
 }
 
-.document 
-{
-	height: 100%;
+.sideBar p {
+	padding: 16px;
+	margin: 0;
 }
 
-#TitleBar
-{
+#TitleBar {
 	width: 100%;
 
 	position: relative;
 }
 
-#TitleImage
-{
+#TitleImage {
 	width: 100%;
 
 	vertical-align: top;
 }
 
-#Slider
-{
+#Slider {
 	width: 0px;
 	height: 97%;
 
@@ -70,17 +99,20 @@ b
 	left: 20%;
 	top: 2%;
 	position: absolute;
-    animation: slideIn 4s 1 0.5s ease-out forwards;
+	animation: slideIn 4s 1 0.5s ease-out forwards;
 }
 
-@keyframes slideIn
-{
-    0%{width: 0%;}
-    100%{width: 60%;}
+@keyframes slideIn {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 60%;
+	}
 }
 
-#About-Section
-{
+#About-Section {
 	width: 100%;
 	height: 40vw;
 
@@ -89,19 +121,18 @@ b
 	text-align: center;
 }
 
-.particles
-{
-	width: 100%;
+.particles {
+	width: 90%;
 	height: 40vw;
 
 	position: absolute;
 }
 
-#About{
+#About {
 	width: 75%;
 	height: 32vw;
 
-	background-color: rgba(200, 200, 200, 0.5);
+	background-color: rgba(20, 20, 20, 0.5);
 
 	display: inline-block;
 	position: relative;
@@ -109,16 +140,14 @@ b
 	margin: 4vw;
 }
 
-#About h1
-{
+#About h1 {
 	width: 60%;
 
 	margin-right: 0px;
 	margin-bottom: 0.6%;
 }
 
-#About p
-{
+#About p {
 	width: 60%;
 
 	margin-left: 5%;
@@ -127,13 +156,11 @@ b
 	text-align: left;
 }
 
-#About b
-{
+#About b {
 	color: var(--alt-color);
 }
 
-#portrait
-{
+#portrait {
 	width: 25%;
 
 	float: right;
@@ -142,42 +169,37 @@ b
 	margin: 5%;
 }
 
-#Links
-{
+#Links {
 	width: 60%;
 }
 
-#Links button
-{
-  	background-color: var(--highlight-color);
+#Links button {
+	background-color: var(--highlight-color);
 
-	color: var(--txt-color);
+	color: var(--alt-color);
 	font-size: 2vw;
 
 	border: none;
 	border-radius: 20vw;
 
 	padding: 2%;
-	margin: 0px 2%; 
+	margin: 0px 2%;
 
 	cursor: pointer;
 	outline: 0;
 }
 
-#Links button:hover 
-{
-	background-color: #FFFFFF;
+#Links button:hover {
+	background-color: var(--alt-color);
 
-	color: #000000;
+	color: var(--highlight-color);
 }
 
-#Links img
-{
+#Links img {
 	width: 1.5vw;
 }
 
-.content
-{
+.content {
 	width: 100%;
 
 	background-color: inherit;
@@ -186,51 +208,51 @@ b
 	display: inline-block;
 }
 
-.contentItem
-{
+.contentItem {
 	display: flex;
 
 	justify-content: center;
 	opacity: 0;
-  	
-  	animation: fadeIn 2s ease-out 1 forwards paused;
+
+	animation: fadeIn 2s ease-out 1 forwards paused;
 }
 
-@keyframes fadeIn
-{
-	0% {opacity: 0;}
-	100% {opacity: 100;}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100;
+	}
 }
 
-.contentElement
-{
+.contentElement {
 	width: 70%;
 
 	background-color: inherit;
-	
+
 	position: relative;
 
-	border: 0.5vw solid var(--highlight-color);
+	border: 0.5vw solid var(--alt-color);
 
 	padding: 4%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
 
-.contentElement h1
-{
+.contentElement h1 {
 	text-align: center;
 
 	margin: 0px;
 }
 
-.contentElement pre
-{
+.contentElement pre {
 	width: 65%;
 
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word; 
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
 }
