@@ -93,7 +93,7 @@ b {
 	width: 0px;
 	height: 97%;
 
-	background-color: var(--highlight-color);
+	background-color: var(--alt-color);
 
 	z-index: -1;
 	left: 20%;
