@@ -1,5 +1,25 @@
 [
   {
+    "name": "Recipe Server",
+    "extension": ".png",
+    "blerb": "          I wanted to learn how to be a better cook and start cooking more complicated recipies for myself and wanted a device to help me with this. I chose to make a web server on a \n\rRaspberry Pi\r with a small screen and some external buttons. I \n\r3D printed\r a case to hold the screen, pi and buttons. The buttons were made large so that they could be pressed with my elbows if my hands had food on them while cooking. The web server was made with \n\rnginx, Next.js, and Prisma\r. For this application these tools are overkill, but I wanted to use this as an opportunity to learn modern web development tools. The device can be connected to remotely through the web server where I can add and edit recipies that are stored on a local \n\rdatabase\r. It also has features like a shopping list generator and portion scaling."
+  },
+  {
+    "name": "Wood Working",
+    "extension": ".png",
+    "blerb": "          I've always wanted to learn how to wood work, so I started with carving small birds with a knife. Then my first big carving was of a whale. I entered this whale in the New Brunswick Wood Carving Association's 2024 competition and \n\rwon 1st place\r in the novice division. To learn more, I chose to make a shorebird that was painted and used woodburning to etch in the quills and fibers on the feathers."
+  },
+  {
+    "name": "2-layer PCB Prototyping Machine",
+    "extension": ".mp4",
+    "blerb": "          For my fourth year design project me and 4 classmates built a 2-layer printed circuit board (PCB) prototyping machine. We won the \n\rJames Dyson Innovation Award\r for this project. It works by placing a blank square of FR-4 (copper clad fiberglass) into the machine. Then the traces, pads, through holes, and via holes are milled out using standard \n\rCNC milling\r and drilling processes. Once this is done on one side there is a motor which will flip the whole board so traces can be milled on the back side as well.\n          The innovation comes from how we create and fill the vias. We use a custom wire extruder mechanism to extrude copper wire. An \n\rOpenCV\r program runs and detects the empty via holes as well as the wire coming out of the extruder. It then sends adjustment commands to the X/Y motors to position the wire into the via hole. Conductive sensing is used to detect if the wire is not in the hole. Once the wire is in the hole, it is cut off and the extruder moves out of the way. Finally leadscrews move a press down on both sides of the board to squish the wire, filling the via and creating contact with the top surface of the board.\n          My job for this project was designing and building the computer vision components, various firmware components, and the project website \n\thttps://lobsterpcb.github.io/\tclick here\t."
+  },
+  {
+    "name": "Spiral Robot",
+    "extension": ".mp4",
+    "blerb": "          In 3rd year there was an open ended design project to build a robot to travers a spiral obstacle course. Along with 3 of my classmates we designed a standard 4 wheeled robot with two \n\rToF sensors\r to complete the course. The wheels were made with \n\rTPU\r fillament to give them a bit of flexibility so that it could bend and grab onto small ledges better."
+  },
+  {
     "name": "Temperature Sensor",
     "extension": ".mp4",
     "blerb": "          During my work term at \n\rSt Marys Cement\r I was tasked with creating a wireless temperature sensor. The \n\rrequirements\r for this sensor were as follows: it must send a UDP message with the data once every minute, it must last for at least 3 years without replacing the battery, and it must withstand harsh outdoor conditions such as cement dust, snow and rain.\n          I first looked at using an Arduino and a Wi-Fi module. However, this consumed too much power to last for the required 3 years. After some research I learned about \n\rLoRa radio technology\r which can send small packets of data over large distances with a lot less power than a Wi-Fi transmission. From here I found a \n\rmicrocontroller\r made by \n\rAdafruit\r that had a LoRa radio module which is what I ended up using. With this MCU as a starting point I researched the other parts that would best suit the project. My boss said that I should \n\rdesign it to last as long as possible\r in order to reduce maintenance costs. So, I added a \n\rsolar panel and charging circuit\r to extend the battery life even more.\n          After \n\rsoldering\r all the components and fitting it into the housing, the prototype was complete. It had a screen with buttons to let a user configure and debug the device without needing to change the code. It read the temperature from a sensor in the \n\rthermowell\r. It sent this data through the radio module and antenna to a \n\rLoRa gateway\r which forwarded the data as a \n\rUDP packet\r via ethernet to the company’s local network. From here the \n\rPLC’s\r received the packet and processed the data."
