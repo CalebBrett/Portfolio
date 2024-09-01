@@ -1,57 +1,64 @@
 [
-  {
-    "name": "Recipe Server",
-    "extension": ".png",
-    "blerb": "          I wanted to learn how to be a better cook and start cooking more complicated recipies for myself and wanted a device to help me with this. I chose to make a web server on a \n\rRaspberry Pi\r with a small screen and some external buttons. I \n\r3D printed\r a case to hold the screen, pi and buttons. The buttons were made large so that they could be pressed with my elbows if my hands had food on them while cooking. The web server was made with \n\rnginx, Next.js, and Prisma\r. For this application these tools are overkill, but I wanted to use this as an opportunity to learn modern web development tools. The device can be connected to remotely through the web server where I can add and edit recipies that are stored on a local \n\rdatabase\r. It also has features like a shopping list generator and portion scaling."
-  },
-  {
-    "name": "Wood Working",
-    "extension": ".png",
-    "blerb": "          I've always wanted to learn how to wood work, so I started with carving small birds with a knife. Then my first big carving was of a whale. I entered this whale in the New Brunswick Wood Carving Association's 2024 competition and \n\rwon 1st place\r in the novice division. To learn more, I chose to make a shorebird that was painted and used woodburning to etch in the quills and fibers on the feathers."
-  },
-  {
-    "name": "2-layer PCB Prototyping Machine",
-    "extension": ".mp4",
-    "blerb": "          For my fourth year design project me and 4 classmates built a 2-layer printed circuit board (PCB) prototyping machine. We won the \n\rJames Dyson Innovation Award\r for this project. It works by placing a blank square of FR-4 (copper clad fiberglass) into the machine. Then the traces, pads, through holes, and via holes are milled out using standard \n\rCNC milling\r and drilling processes. Once this is done on one side there is a motor which will flip the whole board so traces can be milled on the back side as well.\n          The innovation comes from how we create and fill the vias. We use a custom wire extruder mechanism to extrude copper wire. An \n\rOpenCV\r program runs and detects the empty via holes as well as the wire coming out of the extruder. It then sends adjustment commands to the X/Y motors to position the wire into the via hole. Conductive sensing is used to detect if the wire is not in the hole. Once the wire is in the hole, it is cut off and the extruder moves out of the way. Finally leadscrews move a press down on both sides of the board to squish the wire, filling the via and creating contact with the top surface of the board.\n          My job for this project was designing and building the computer vision components, various firmware components, and the project website \n\thttps://lobsterpcb.github.io/\tclick here\t."
-  },
-  {
-    "name": "Spiral Robot",
-    "extension": ".mp4",
-    "blerb": "          In 3rd year there was an open ended design project to build a robot to travers a spiral obstacle course. Along with 3 of my classmates we designed a standard 4 wheeled robot with two \n\rToF sensors\r to complete the course. The wheels were made with \n\rTPU\r fillament to give them a bit of flexibility so that it could bend and grab onto small ledges better."
-  },
-  {
-    "name": "Temperature Sensor",
-    "extension": ".mp4",
-    "blerb": "          During my work term at \n\rSt Marys Cement\r I was tasked with creating a wireless temperature sensor. The \n\rrequirements\r for this sensor were as follows: it must send a UDP message with the data once every minute, it must last for at least 3 years without replacing the battery, and it must withstand harsh outdoor conditions such as cement dust, snow and rain.\n          I first looked at using an Arduino and a Wi-Fi module. However, this consumed too much power to last for the required 3 years. After some research I learned about \n\rLoRa radio technology\r which can send small packets of data over large distances with a lot less power than a Wi-Fi transmission. From here I found a \n\rmicrocontroller\r made by \n\rAdafruit\r that had a LoRa radio module which is what I ended up using. With this MCU as a starting point I researched the other parts that would best suit the project. My boss said that I should \n\rdesign it to last as long as possible\r in order to reduce maintenance costs. So, I added a \n\rsolar panel and charging circuit\r to extend the battery life even more.\n          After \n\rsoldering\r all the components and fitting it into the housing, the prototype was complete. It had a screen with buttons to let a user configure and debug the device without needing to change the code. It read the temperature from a sensor in the \n\rthermowell\r. It sent this data through the radio module and antenna to a \n\rLoRa gateway\r which forwarded the data as a \n\rUDP packet\r via ethernet to the company’s local network. From here the \n\rPLC’s\r received the packet and processed the data."
-  },
-  {
-    "name": "Chess Robot",
-    "extension": ".mp4",
-    "blerb": "          I along with two of my classmates built a robot that plays chess with you. The robot can accurately navigate the board, pick up the pieces and preform complex moves such as castling. It is also able to detect where the pieces are on the board and make a move \n\rautonomously\r.\n          We used a Lego NXT kit and laser cut gear tracks to build the robot. \n\rRobotC\r was used to program the movements in the NXT brick and to connect the brick via Bluetooth to an app. We made the app in \n\rJava\r using \n\rAndroid Studio\r. The app was divided into three parts: Bluetooth communications, computer vision and the neural network. I made the \n\rcomputer vision\r using \n\rOpenCV\r. My part of the app would take a picture and detect what colors were present and where they were in the image. Colors were painted on the top of each piece so I could convert this information into an output string which contained the location and type of piece present on the board. This output string was fed into a \n\rcustom neural network\r that my classmate made, where the next best move would be calculated. The neural network would output this move as a command that our RobotC program could interpret. Finally, the command was given to the \n\rBluetooth\r communications part of the app where it was then sent to the robot to be executed."
-  },
-  {
-    "name": "ecoSphere",
-    "extension": ".png",
-    "blerb": "          This was a project for the hackathon \n\thttps: //www.hackathon.com/event/ecodinghacks-5c635dab6be8e6001bfb736d\tECOding Hacks\t. EcoSphere is an \n\randroid app\r that encourages people to recycle through fun animations and pictures. Users are presented with a virtual environment that is polluted. In order to clean up the pollution they must recycle in real life. Each time they \n\rrecycle in real life\r they can press the recycle bin button on the app to increase their score. As your score increases the environment brightens up, the fish come back to life and the garbage goes away. In other words, users can see this virtual environment being cleaned as they continue to report that they have recycled.\n          This was \n\rmy first hackathon\r and I had a ton of fun. Even though we only had \n\r7 hours\r to come up with an idea and create a prototype we were able to make this app. I had to learn how to program using \n\rLua\r during the hackathon which was a fun challenge to face while under a time constraint. EcoSphere came close to winning in its category, so close that the organizers created an \n\rhonorable mention\r just for our project as usually they would only announce the winners of each category.\n          This application was built primarily with \n\rCorona SDK\r, but the graphics were made in \n\rAdobe Photoshop\r. Corona SDK uses the programming language Lua and allowed me to quickly create and emulate a \n\rmobile application\r."
-  },
-  {
-    "name": "Pong",
-    "extension": ".jpg",
-    "blerb": "          I made this game using \n\rJavaScript\r. This was my first program built using JavaScript, so I started by making a basic game of Pong and then adding extra features. I added \n\rsingle player\r and \n\rmultiplayer\r modes that you can switch between by pressing the '1' and '2' keys. I also added the ability to pause the game when you press 'p'. As well as some small features such as changing background colors and sounds that will play when you hit the ball. The 'w', 's' and arrow keys move the paddles. If you would like to play, \n\thttps: //calebbrett.github.io/Pong/PongRetroWColor.html\tclick here\t."
-  },
-  {
-    "name": "Camera Mount",
-    "extension": ".mp4",
-    "blerb": "          I built a motorized pan and tilt camera mount that is controlled by an Arduino, C# and OpenCV. The main program was written in \n\rC#\r, it uses OpenCV and contains the \n\rGUI\r. The GUI has 3 components: buttons that turn on features such as the camera, a display to show the input from the camera, and a green square used to control where the camera is pointed. The green square works by converting the position of your mouse when it is over the square into coordinates. These coordinates are sent to the \n\rArduino\r. The Arduino’s program then moves the servo motors to the appropriate position.\n          Currently, the \n\rOpenCV\r aspect is used to get the camera input from the webcam. My hope is that in the future I will be able to have it track and follow an object. I have started to do this by analyzing the video for specific coloured pixels and retrieving their coordinates. However, I am still working on a way to determine where most of the colour is and how to move the camera with that information."
-  },
-  {
-    "name": "Tip n Tilt",
-    "extension": ".png",
-    "blerb": "          This is the first \n\rmobile application\r I built. The controls for the game are tilting and taping. Tilting your phone one way or the other causes the smiley face to roll in that direction. Tapping on the side of the screen will cause the character to jump in that direction. The goal of the game is to gain as many points as possible by rolling down the \n\rprocedurally generated map\r while avoiding the spikes.\n          I built this using the \n\rUnity game engine\r and \n\rC#\r. I wanted to try incorporating many things I did not have experience with. So, when designing the app, I wanted to try to use different input methods like tilting. I also wanted to make a procedurally generated map so that the game could be played for a long time and the level would keep changing."
-  },
-  {
-    "name": "Raft",
-    "extension": ".jpg",
-    "blerb": "          I designed and built a raft to leave out on the river so that my family could swim to it and jump off in the summer. I used wooden boards to make the frame, plastic barrels to make it float and metal straps to keep the barrels secured to the frame. It is about 12x12 feet and uses 6 barrels to stay afloat. I designed the raft so that the boards on top of the frame are removeable. This made the raft much lighter and easier to transport."
-  }
+	{
+		"name": "Recipe Server",
+		"extension": ".jpg",
+		"landscape": false,
+		"tools": "Nginx,Next.js,Typescript,Prisma,3D Printing,Fusion360,Python,Raspberry Pi",
+		"blerb": "          I wanted to learn how to be a better cook and start cooking more complicated recipies for myself and wanted a device to help me with this. I chose to make a web server on a \n\rRaspberry Pi\r with a small screen and some external buttons. I \n\r3D printed\r a case to hold the screen, pi and buttons. The buttons were made large so that they could be pressed with my elbows if my hands had food on them while cooking. The web server was made with \n\rnginx, Next.js, and Prisma\r. For this application these tools are overkill, but I wanted to use this as an opportunity to learn modern web development tools. The device can be connected to remotely through the web server where I can add and edit recipies that are stored on a local \n\rdatabase\r. It also has features like a shopping list generator and portion scaling."
+	},
+	{
+		"name": "Wood Working",
+		"extension": ".jpg",
+		"blerb": "          I've always wanted to learn how to wood work, so I started with carving small birds with a knife. Then my first big carving was of a whale. I entered this whale in the New Brunswick Wood Carving Association's 2024 competition and \n\rwon 1st place\r in the novice division. To learn more, I chose to make a shorebird that was painted and used woodburning to etch in the quills and fibers on the feathers."
+	},
+	{
+		"name": "2-layer PCB Prototyping Machine",
+		"extension": ".mp4",
+		"blerb": "          For my fourth year design project me and 4 classmates built a 2-layer printed circuit board (PCB) prototyping machine. We won the \n\rJames Dyson Innovation Award\r for this project. It works by placing a blank square of FR-4 (copper clad fiberglass) into the machine. Then the traces, pads, through holes, and via holes are milled out using standard \n\rCNC milling\r and drilling processes. Once this is done on one side there is a motor which will flip the whole board so traces can be milled on the back side as well.\n          The innovation comes from how we create and fill the vias. We use a custom wire extruder mechanism to extrude copper wire. An \n\rOpenCV\r program runs and detects the empty via holes as well as the wire coming out of the extruder. It then sends adjustment commands to the X/Y motors to position the wire into the via hole. Conductive sensing is used to detect if the wire is not in the hole. Once the wire is in the hole, it is cut off and the extruder moves out of the way. Finally leadscrews move a press down on both sides of the board to squish the wire, filling the via and creating contact with the top surface of the board.\n          My job for this project was designing and building the computer vision components, various firmware components, and the project website \n\thttps://lobsterpcb.github.io/\tclick here\t."
+	},
+	{
+		"name": "Project Management Software",
+		"extension": ".png",
+		"blerb": "HILALALLA."
+	},
+	{
+		"name": "Spiral Robot",
+		"extension": ".mp4",
+		"blerb": "          In 3rd year there was an open ended design project to build a robot to travers a spiral obstacle course. Along with 3 of my classmates we designed a standard 4 wheeled robot with two \n\rToF sensors\r to complete the course. The wheels were made with \n\rTPU\r fillament to give them a bit of flexibility so that it could bend and grab onto small ledges better."
+	},
+	{
+		"name": "Temperature Sensor",
+		"extension": ".mp4",
+		"blerb": "          During my work term at \n\rSt Marys Cement\r I was tasked with creating a wireless temperature sensor. The \n\rrequirements\r for this sensor were as follows: it must send a UDP message with the data once every minute, it must last for at least 3 years without replacing the battery, and it must withstand harsh outdoor conditions such as cement dust, snow and rain.\n          I first looked at using an Arduino and a Wi-Fi module. However, this consumed too much power to last for the required 3 years. After some research I learned about \n\rLoRa radio technology\r which can send small packets of data over large distances with a lot less power than a Wi-Fi transmission. From here I found a \n\rmicrocontroller\r made by \n\rAdafruit\r that had a LoRa radio module which is what I ended up using. With this MCU as a starting point I researched the other parts that would best suit the project. My boss said that I should \n\rdesign it to last as long as possible\r in order to reduce maintenance costs. So, I added a \n\rsolar panel and charging circuit\r to extend the battery life even more.\n          After \n\rsoldering\r all the components and fitting it into the housing, the prototype was complete. It had a screen with buttons to let a user configure and debug the device without needing to change the code. It read the temperature from a sensor in the \n\rthermowell\r. It sent this data through the radio module and antenna to a \n\rLoRa gateway\r which forwarded the data as a \n\rUDP packet\r via ethernet to the company’s local network. From here the \n\rPLC’s\r received the packet and processed the data."
+	},
+	{
+		"name": "Chess Robot",
+		"extension": ".mp4",
+		"blerb": "          I along with two of my classmates built a robot that plays chess with you. The robot can accurately navigate the board, pick up the pieces and preform complex moves such as castling. It is also able to detect where the pieces are on the board and make a move \n\rautonomously\r.\n          We used a Lego NXT kit and laser cut gear tracks to build the robot. \n\rRobotC\r was used to program the movements in the NXT brick and to connect the brick via Bluetooth to an app. We made the app in \n\rJava\r using \n\rAndroid Studio\r. The app was divided into three parts: Bluetooth communications, computer vision and the neural network. I made the \n\rcomputer vision\r using \n\rOpenCV\r. My part of the app would take a picture and detect what colors were present and where they were in the image. Colors were painted on the top of each piece so I could convert this information into an output string which contained the location and type of piece present on the board. This output string was fed into a \n\rcustom neural network\r that my classmate made, where the next best move would be calculated. The neural network would output this move as a command that our RobotC program could interpret. Finally, the command was given to the \n\rBluetooth\r communications part of the app where it was then sent to the robot to be executed."
+	},
+	{
+		"name": "ecoSphere",
+		"extension": ".png",
+		"blerb": "          This was a project for the hackathon \n\thttps: //www.hackathon.com/event/ecodinghacks-5c635dab6be8e6001bfb736d\tECOding Hacks\t. EcoSphere is an \n\randroid app\r that encourages people to recycle through fun animations and pictures. Users are presented with a virtual environment that is polluted. In order to clean up the pollution they must recycle in real life. Each time they \n\rrecycle in real life\r they can press the recycle bin button on the app to increase their score. As your score increases the environment brightens up, the fish come back to life and the garbage goes away. In other words, users can see this virtual environment being cleaned as they continue to report that they have recycled.\n          This was \n\rmy first hackathon\r and I had a ton of fun. Even though we only had \n\r7 hours\r to come up with an idea and create a prototype we were able to make this app. I had to learn how to program using \n\rLua\r during the hackathon which was a fun challenge to face while under a time constraint. EcoSphere came close to winning in its category, so close that the organizers created an \n\rhonorable mention\r just for our project as usually they would only announce the winners of each category.\n          This application was built primarily with \n\rCorona SDK\r, but the graphics were made in \n\rAdobe Photoshop\r. Corona SDK uses the programming language Lua and allowed me to quickly create and emulate a \n\rmobile application\r."
+	},
+	{
+		"name": "Pong",
+		"extension": ".jpg",
+		"blerb": "          I made this game using \n\rJavaScript\r. This was my first program built using JavaScript, so I started by making a basic game of Pong and then adding extra features. I added \n\rsingle player\r and \n\rmultiplayer\r modes that you can switch between by pressing the '1' and '2' keys. I also added the ability to pause the game when you press 'p'. As well as some small features such as changing background colors and sounds that will play when you hit the ball. The 'w', 's' and arrow keys move the paddles. If you would like to play, \n\thttps: //calebbrett.github.io/Pong/PongRetroWColor.html\tclick here\t."
+	},
+	{
+		"name": "Camera Mount",
+		"extension": ".mp4",
+		"blerb": "          I built a motorized pan and tilt camera mount that is controlled by an Arduino, C# and OpenCV. The main program was written in \n\rC#\r, it uses OpenCV and contains the \n\rGUI\r. The GUI has 3 components: buttons that turn on features such as the camera, a display to show the input from the camera, and a green square used to control where the camera is pointed. The green square works by converting the position of your mouse when it is over the square into coordinates. These coordinates are sent to the \n\rArduino\r. The Arduino’s program then moves the servo motors to the appropriate position.\n          Currently, the \n\rOpenCV\r aspect is used to get the camera input from the webcam. My hope is that in the future I will be able to have it track and follow an object. I have started to do this by analyzing the video for specific coloured pixels and retrieving their coordinates. However, I am still working on a way to determine where most of the colour is and how to move the camera with that information."
+	},
+	{
+		"name": "Tip n Tilt",
+		"extension": ".png",
+		"blerb": "          This is the first \n\rmobile application\r I built. The controls for the game are tilting and taping. Tilting your phone one way or the other causes the smiley face to roll in that direction. Tapping on the side of the screen will cause the character to jump in that direction. The goal of the game is to gain as many points as possible by rolling down the \n\rprocedurally generated map\r while avoiding the spikes.\n          I built this using the \n\rUnity game engine\r and \n\rC#\r. I wanted to try incorporating many things I did not have experience with. So, when designing the app, I wanted to try to use different input methods like tilting. I also wanted to make a procedurally generated map so that the game could be played for a long time and the level would keep changing."
+	},
+	{
+		"name": "Raft",
+		"extension": ".jpg",
+		"blerb": "          I designed and built a raft to leave out on the river so that my family could swim to it and jump off in the summer. I used wooden boards to make the frame, plastic barrels to make it float and metal straps to keep the barrels secured to the frame. It is about 12x12 feet and uses 6 barrels to stay afloat. I designed the raft so that the boards on top of the frame are removeable. This made the raft much lighter and easier to transport."
+	}
 ]
