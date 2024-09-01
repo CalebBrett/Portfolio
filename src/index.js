@@ -188,6 +188,7 @@ function displayMedia(name, extension) {
 			return (
 				<ReactPlayer
 					className="media"
+					height="30vw"
 					width="100%"
 					alt=""
 					url={"./Images/" + name + extension}
