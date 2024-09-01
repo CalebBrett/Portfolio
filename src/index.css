@@ -260,7 +260,7 @@ b {
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: auto auto auto;
 	grid-template-areas: "media title" "media blerb" "media tools";
-	gap: var(--gap-size) var(--gap-size);
+	gap: var(--gap-size) 3%;
 	place-items: stretch;
 	place-content: stretch;
 
