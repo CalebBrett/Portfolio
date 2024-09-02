@@ -6,9 +6,7 @@ import "./index.css";
 import projects from "./projects.json";
 
 // TODO: combo all hackathon stuff and photo shop all into one image maybe. crousel images in js if easy also need like video option too though
-// TODO: aquatico font or other s
-// TODO: fix button icons
-// TODO: check spelling on new entries
+// TODO: check spelling on entries
 // TODO: rewrite about and fix spacing all over it
 // TODO: add border if side bar doesnt have scroll and make scroll more destinct
 
@@ -188,7 +186,6 @@ function displayMedia(name, extension) {
 			return (
 				<ReactPlayer
 					className="media"
-					height="30vw"
 					width="100%"
 					alt=""
 					url={"./Images/" + name + extension}
@@ -235,7 +232,7 @@ function textFormatting(text) {
 		elements.push(lines[i]);
 
 		if (i < lines.length - 1) {
-			//Add linebreaks
+			//Add line breaks
 			elements.push(<br key={i} />);
 		}
 	}
