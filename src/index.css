@@ -154,23 +154,27 @@ b {
 
 #About {
 	width: 75%;
-	height: 32vw;
+	height: 28vw;
+
+	display: inline-block;
 
 	background-color: rgba(20, 20, 20, 0.5);
 
-	/* display: inline-block; */
+	padding: 3%;
+	margin: 3vw;
+}
+
+#About-Grid {
+	height: 100%;
 	display: inline-grid;
 	position: relative;
 
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 50px auto 50px;
+	grid-template-columns: 5fr 2fr;
+	grid-template-rows: auto auto auto; /* TODO: fix this */
 	grid-template-areas: "title portrait" "about portrait" "buttons portrait";
 	gap: var(--gap-size) 3%;
 	place-items: stretch;
 	place-content: stretch;
-
-	padding: 3%;
-	margin: 4vw;
 }
 
 #About h1 {
@@ -187,15 +191,17 @@ b {
 }
 
 #portrait {
-	width: 25%;
+	width: 100%;
 
 	grid-area: portrait;
+	place-self: center;
 
 	border-radius: 100%;
 }
 
 #Links {
 	grid-area: buttons;
+	align-self: center;
 }
 
 #Links button {

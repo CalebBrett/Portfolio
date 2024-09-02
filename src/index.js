@@ -7,7 +7,7 @@ import projects from "./projects.json";
 
 // TODO: combo all hackathon stuff and photo shop all into one image maybe. crousel images in js if easy also need like video option too though
 // TODO: check spelling on entries
-// TODO: rewrite about and fix spacing all over it
+// TODO: rewrite about
 // TODO: add border if side bar doesnt have scroll and make scroll more destinct
 
 class Document extends React.Component {
@@ -82,36 +82,38 @@ class About extends React.Component {
 			<div id="About-Section">
 				<Particles className="particles" params={particleOptions} />
 				<div id="About">
-					<img id="portrait" src="./Images/Portrait.jpg" alt="" />
-					<h1>
-						<u>About Me</u>
-					</h1>
-					<p>
-						I am a <b>Mechatronics Engineering</b> student at the University of
-						Waterloo. I <b>started programming in 2012</b> and am skilled in
-						many areas such as{" "}
-						<b>full stack, mobile, desktop and firmware development</b>. I use a
-						variety of programming languages and I'm always learning more. Also,
-						I have completed a number of projects involving mechanical and
-						electrical design. I am always looking for opportunities to expand
-						my knowledge in all areas. However, currently I would like to focus
-						on <b>mechanical and electrical design</b> as these two areas
-						fascinate me the most. Currently I am doing this by working on
-						woodworking and PCB design projects. I enjoy playing a variety of
-						sports and outdoor activities. I am a passionate, enthusiastic,
-						problem solver with excellent collaborative and interpersonal
-						skills.
-					</p>
-					<div id="Links">
-						<button onClick={this.goToProjects}>
-							<img src="./Images/arrow.svg" alt="" /> Projects
-						</button>
-						<button onClick={this.goToGithub}>
-							<img src="./Images/github.svg" alt="" /> GitHub
-						</button>
-						<button onClick={this.goToLinkedIn}>
-							<img src="./Images/linkedin.svg" alt="" /> LinkedIn
-						</button>
+					<div id="About-Grid">
+						<img id="portrait" src="./Images/Portrait.jpg" alt="" />
+						<h1>
+							<u>About Me</u>
+						</h1>
+						<p>
+							I am a <b>Mechatronics Engineering</b> student at the University
+							of Waterloo. I <b>started programming in 2012</b> and am skilled
+							in many areas such as{" "}
+							<b>full stack, mobile, desktop and firmware development</b>. I use
+							a variety of programming languages and I'm always learning more.
+							Also, I have completed a number of projects involving mechanical
+							and electrical design. I am always looking for opportunities to
+							expand my knowledge in all areas. However, currently I would like
+							to focus on <b>mechanical and electrical design</b> as these two
+							areas fascinate me the most. Currently I am doing this by working
+							on woodworking and PCB design projects. I enjoy playing a variety
+							of sports and outdoor activities. I am a passionate, enthusiastic,
+							problem solver with excellent collaborative and interpersonal
+							skills.
+						</p>
+						<div id="Links">
+							<button onClick={this.goToProjects}>
+								<img src="./Images/arrow.svg" alt="" /> Projects
+							</button>
+							<button onClick={this.goToGithub}>
+								<img src="./Images/github.svg" alt="" /> GitHub
+							</button>
+							<button onClick={this.goToLinkedIn}>
+								<img src="./Images/linkedin.svg" alt="" /> LinkedIn
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
