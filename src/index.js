@@ -5,10 +5,11 @@ import Particles from "react-particles-js";
 import "./index.css";
 import projects from "./projects.json";
 
-// TODO: combo all hackathon stuff and photo shop all into one image maybe. crousel images in js if easy also need like video option too though
+// TODO: combo all hackathon stuff and photo shop all into one image maybe
 // TODO: check spelling on entries
 // TODO: rewrite about
 // TODO: add border if side bar doesnt have scroll and make scroll more destinct
+// TODO: put tools under media in landscape and maybe squish it even more (then need a revers one too)
 
 class Document extends React.Component {
 	render() {
