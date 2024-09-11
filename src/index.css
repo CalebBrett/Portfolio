@@ -119,6 +119,17 @@ b {
 	left: 20%;
 	top: 2%;
 	position: absolute;
+	animation: slideIn 4s 1 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 60%;
+	}
 }
 
 #About-Section {

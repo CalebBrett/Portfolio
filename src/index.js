@@ -5,7 +5,7 @@ import Particles from "react-particles-js";
 import "./index.css";
 import projects from "./projects.json";
 
-// TODO: check spelling on entries
+// TODO: Fix media spacing and text stuff fitting right
 // TODO: rewrite about
 // TODO: put tools under media in landscape and maybe squish it even more (then need a revers one too)
 
