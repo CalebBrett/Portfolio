@@ -25,10 +25,6 @@ pre {
 	font-size: 1.2vw;
 }
 
-p {
-	/* margin-top: 0; */
-}
-
 a {
 	color: var(--alt-color);
 	font-weight: bold;
@@ -123,17 +119,6 @@ b {
 	left: 20%;
 	top: 2%;
 	position: absolute;
-	animation: slideIn 4s 1 0.5s ease-out forwards;
-}
-
-@keyframes slideIn {
-	0% {
-		width: 0%;
-	}
-
-	100% {
-		width: 60%;
-	}
 }
 
 #About-Section {
@@ -244,22 +229,9 @@ b {
 	display: flex;
 
 	justify-content: center;
-	opacity: 0;
 
 	padding-top: var(--gap-size);
 	padding-bottom: var(--gap-size);
-
-	animation: fadeIn 2s ease-out 1 forwards paused;
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 100;
-	}
 }
 
 .contentElement {

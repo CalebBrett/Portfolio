@@ -5,10 +5,8 @@ import Particles from "react-particles-js";
 import "./index.css";
 import projects from "./projects.json";
 
-// TODO: combo all hackathon stuff and photo shop all into one image maybe
 // TODO: check spelling on entries
 // TODO: rewrite about
-// TODO: add border if side bar doesnt have scroll and make scroll more destinct
 // TODO: put tools under media in landscape and maybe squish it even more (then need a revers one too)
 
 class Document extends React.Component {
@@ -241,21 +239,6 @@ function textFormatting(text) {
 	}
 	return elements;
 }
-
-function fadeInContent() {
-	if (
-		contentItemsIndex < elementsInPage.length &&
-		window.pageYOffset + (window.innerHeight / 8) * 7 >=
-			elementsInPage[contentItemsIndex].offsetTop
-	) {
-		elementsInPage[contentItemsIndex].style.animationPlayState = "running";
-		contentItemsIndex++;
-	}
-}
-var contentItemsIndex = 0;
-var elementsInPage = document.getElementsByClassName("contentItem");
-window.onscroll = fadeInContent;
-window.onload = fadeInContent;
 
 const particleOptions = {
 	particles: {
