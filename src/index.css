@@ -61,7 +61,7 @@ b {
 	height: 100%;
 	overflow: auto;
 	z-index: 99;
-	/* border-right: solid 5px var(--alt-color); */
+	border-right: solid 1px var(--alt-color);
 }
 
 .sideBar a {
@@ -263,9 +263,17 @@ b {
 	padding: 3%;
 }
 
+.under {
+	grid-template-areas: "media title" "media blerb" "tools blerb";
+}
+
 .reverse {
 	grid-template-columns: 2fr 1fr;
-	grid-template-areas: "title media" "blerb media " "tools media";
+	grid-template-areas: "title media" "blerb media" "tools media";
+}
+
+.reverse .under {
+	grid-template-areas: "title media" "blerb media" "media tools";
 }
 
 .landscape {
@@ -301,7 +309,7 @@ b {
 
 .contentElement .media {
 	grid-area: media;
-	place-self: stretch;
+	place-self: center stretch;
 	height: 100%;
 	object-fit: contain;
 }

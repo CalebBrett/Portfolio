@@ -6,7 +6,6 @@ import "./index.css";
 import projects from "./projects.json";
 
 // TODO: Fix media spacing and text stuff fitting right
-// TODO: rewrite about
 // TODO: put tools under media in landscape and maybe squish it even more (then need a revers one too)
 
 class Document extends React.Component {
@@ -87,18 +86,17 @@ class About extends React.Component {
 							<u>About Me</u>
 						</h1>
 						<p>
-							I am a <b>Mechatronics Engineering</b> student at the University
-							of Waterloo. I <b>started programming in 2012</b> and am skilled
-							in many areas such as{" "}
+							I am a <b>Mechatronics Engineering</b> graduate from the
+							University of Waterloo. I <b>started programming in 2012</b> and
+							am skilled in many areas such as
 							<b>full stack, mobile, desktop and firmware development</b>. I use
-							a variety of programming languages and I'm always learning more.
-							Also, I have completed a number of projects involving mechanical
-							and electrical design. I am always looking for opportunities to
-							expand my knowledge in all areas. However, currently I would like
-							to focus on <b>mechanical and electrical design</b> as these two
-							areas fascinate me the most. Currently I am doing this by working
-							on woodworking and PCB design projects. I enjoy playing a variety
-							of sports and outdoor activities. I am a passionate, enthusiastic,
+							a variety of programming languages and I'm always learning more. I
+							am always looking for opportunities to expand my knowledge in all
+							areas. However, currently I would like to focus on
+							<b>mechanical and electrical design</b> as these two areas
+							fascinate me the most. Currently I am doing this by working on
+							woodworking and PCB design projects. I enjoy playing a variety of
+							sports and outdoor activities. I am a passionate, enthusiastic,
 							problem solver with excellent collaborative and interpersonal
 							skills.
 						</p>
@@ -131,6 +129,7 @@ class ContentList extends React.Component {
 								name={element.name}
 								extension={element.extension}
 								landscape={element.landscape}
+								isUnder={element.isUnder}
 								tools={element.tools}
 								data={element.blerb}
 								number={i}
@@ -147,6 +146,10 @@ class ContentElements extends React.Component {
 	render() {
 		let reverseClass = "reverse ";
 		let landscapeClass = "landscape";
+		let isUnderClass = " under";
+		if (this.props.isUnder == false) {
+			isUnderClass = "";
+		}
 		if (this.props.landscape == false) {
 			landscapeClass = "";
 		}
@@ -156,7 +159,9 @@ class ContentElements extends React.Component {
 
 		return (
 			<div
-				className={"contentElement " + reverseClass + landscapeClass}
+				className={
+					"contentElement " + reverseClass + landscapeClass + isUnderClass
+				}
 				id={this.props.name}
 			>
 				<h1 align="centered">
