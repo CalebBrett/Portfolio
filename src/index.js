@@ -5,9 +5,6 @@ import Particles from "react-particles-js";
 import "./index.css";
 import projects from "./projects.json";
 
-// TODO: Fix media spacing and text stuff fitting right
-// TODO: put tools under media in landscape and maybe squish it even more (then need a revers one too)
-
 class Document extends React.Component {
 	render() {
 		return (
@@ -88,11 +85,11 @@ class About extends React.Component {
 						<p>
 							I am a <b>Mechatronics Engineering</b> graduate from the
 							University of Waterloo. I <b>started programming in 2012</b> and
-							am skilled in many areas such as
+							am skilled in many areas such as{" "}
 							<b>full stack, mobile, desktop and firmware development</b>. I use
 							a variety of programming languages and I'm always learning more. I
 							am always looking for opportunities to expand my knowledge in all
-							areas. However, currently I would like to focus on
+							areas. However, currently I would like to focus on{" "}
 							<b>mechanical and electrical design</b> as these two areas
 							fascinate me the most. Currently I am doing this by working on
 							woodworking and PCB design projects. I enjoy playing a variety of
@@ -192,7 +189,7 @@ function displayMedia(name, extension) {
 			return (
 				<ReactPlayer
 					className="media"
-					// width="100%"
+					width="100%"
 					alt=""
 					url={"./Images/" + name + extension}
 					playing
@@ -205,7 +202,7 @@ function displayMedia(name, extension) {
 			return (
 				<img
 					className="media"
-					// width="100%"
+					width="100%"
 					src={"./Images/" + name + extension}
 					alt=""
 				/>

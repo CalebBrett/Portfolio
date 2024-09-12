@@ -273,7 +273,7 @@ b {
 }
 
 .reverse.under {
-	grid-template-areas: "title media" "blerb media" "media tools";
+	grid-template-areas: "title media" "blerb media" "blerb tools";
 }
 
 .landscape {
