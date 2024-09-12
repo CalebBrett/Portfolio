@@ -272,7 +272,7 @@ b {
 	grid-template-areas: "title media" "blerb media" "tools media";
 }
 
-.reverse .under {
+.reverse.under {
 	grid-template-areas: "title media" "blerb media" "media tools";
 }
 

@@ -192,7 +192,7 @@ function displayMedia(name, extension) {
 			return (
 				<ReactPlayer
 					className="media"
-					width="100%"
+					// width="100%"
 					alt=""
 					url={"./Images/" + name + extension}
 					playing
@@ -205,7 +205,7 @@ function displayMedia(name, extension) {
 			return (
 				<img
 					className="media"
-					width="100%"
+					// width="100%"
 					src={"./Images/" + name + extension}
 					alt=""
 				/>
