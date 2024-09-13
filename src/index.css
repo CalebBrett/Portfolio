@@ -61,7 +61,7 @@ b {
 	height: 100%;
 	overflow: auto;
 	z-index: 99;
-	border-right: solid 1px var(--alt-color);
+	border-right: solid 5px var(--alt-color);
 }
 
 .sideBar a {
