@@ -252,13 +252,13 @@ const particleOptions = {
 			},
 		},
 		color: {
-			value: "#FFFFFF",
+			value: "#ff9e64",
 		},
 		shape: {
 			type: "star",
 			stroke: {
 				width: 0,
-				color: "#FFFE8E",
+				color: "#ff9e64",
 			},
 			polygon: {
 				nb_sides: 7,
@@ -287,7 +287,7 @@ const particleOptions = {
 		line_linked: {
 			enable: true,
 			distance: 200,
-			color: "#FFFE8E",
+			color: "#ff9e64",
 			opacity: 0.4,
 			width: 2,
 		},

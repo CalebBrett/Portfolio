@@ -4,10 +4,14 @@ body {
 	/* --txt-color: #FFFFFF; */
 	/* --highlight-color: #FF6600; */
 	/* --alt-color: #B80C09; */
-	--bg-color: #990d35;
-	--txt-color: #fff8e8;
-	--highlight-color: #d52941;
-	--alt-color: #fcd581;
+	/* --bg-color: #990d35; */
+	/* --txt-color: #fff8e8; */
+	/* --highlight-color: #d52941; */
+	/* --alt-color: #fcd581; */
+	--bg-color: #1a1b26;
+	--txt-color: #9ece6a;
+	--highlight-color: #1f2335;
+	--alt-color: #ff9e64;
 
 	--side-bar-width: 15%;
 	--gap-size: 2%;
