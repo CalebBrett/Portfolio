@@ -88,14 +88,13 @@ class About extends React.Component {
 							am skilled in many areas such as{" "}
 							<b>full stack, mobile, desktop and firmware development</b>. I use
 							a variety of programming languages and I'm always learning more. I
-							am always looking for opportunities to expand my knowledge in all
-							areas. However, currently I would like to focus on{" "}
+							am continually looking for opportunities to expand my knowledge in
+							all areas. Currently I would like to focus on{" "}
 							<b>mechanical and electrical design</b> as these two areas
-							fascinate me the most. Currently I am doing this by working on
-							woodworking and PCB design projects. I enjoy playing a variety of
-							sports and outdoor activities. I am a passionate, enthusiastic,
-							problem solver with excellent collaborative and interpersonal
-							skills.
+							fascinate me the most. I am doing this by working on woodworking
+							and PCB design projects. I enjoy playing a variety of sports and
+							outdoor activities. I am a passionate, enthusiastic, problem
+							solver with excellent collaborative and interpersonal skills.
 						</p>
 						<div id="Links">
 							<button onClick={this.goToProjects}>

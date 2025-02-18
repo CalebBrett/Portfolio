@@ -5,7 +5,7 @@
 		"landscape": true,
 		"isUnder": false,
 		"tools": "Nginx,Next.js,Typescript,Prisma,Fusion 360,Python,Raspberry Pi",
-		"blerb": "          I wanted to learn how to be a better cook and start cooking more complicated recipes for myself and wanted a device to help me with this. I chose to make a web server on a Raspberry Pi with a small screen and some external buttons. I \n\r3D printed\r a case to hold the screen, pi and buttons. The buttons were made large so that they could be pressed with my elbows if my hands had food on them while cooking. The web server was made with Nginx, Next.js, and Prisma. For this application these tools are overkill, but I wanted to use this as an opportunity to learn modern web development tools. The device can be connected to remotely through the web server where I can add and edit recipes that are stored on a local \n\rdatabase\r. It also has features like a shopping list generator and portion scaling."
+		"blerb": "          I wanted to learn how to be a better cook and start cooking more complicated recipes. So, I made a device to help me with this. I chose to make a web server on a Raspberry Pi with a small screen and some external buttons. I \n\r3D printed\r a case to hold the screen, pi and buttons. The buttons were made large so that they could be pressed with my elbows if my hands had food on them while cooking. The web server was made with Nginx, Next.js, and Prisma. For this application these tools are overkill, but I wanted to use this as an opportunity to learn modern web development tools. The device can be connected to remotely through the web server where I can add and edit recipes that are stored on a local \n\rdatabase\r. It also has features like a shopping list generator and portion scaling."
 	},
 	{
 		"name": "2-layer PCB Prototyping Machine",
@@ -36,7 +36,7 @@
 		"extension": ".mp4",
 		"landscape": false,
 		"isUnder": true,
-		"tools": "LoRa,PLC,UDP,Arduino,soldering",
+		"tools": "LoRa,PLC,UDP,Arduino,Soldering",
 		"blerb": "          During my work term at St Marys Cement I was tasked with creating a wireless temperature sensor. The requirements for this sensor were as follows: it must send a UDP message with the data once every minute, it must last for at least 3 years without replacing the battery, and it must withstand harsh outdoor conditions such as cement dust, snow and rain. After some research I learned about LoRa which can send small packets of data over large distances with a lot less power than Wi-Fi. From here I found a microcontroller that had a LoRa radio module. After presenting my preliminary design, my boss said that I should \n\rdesign it to last as long as possible\r in order to reduce maintenance costs. So, I added a \n\rsolar panel and charging circuit\r. After soldering all the components and fitting it into the housing, the prototype was complete. It had a screen with buttons to let a user configure and debug the device. It read the temperature from a sensor in the \n\rthermowell\r. It sends this data through the radio module and antenna to a \n\rLoRa gateway\r which forwarded the data as a UDP packet via Ethernet to the company’s local network. From here the PLC’s received the packet and processed the data."
 	},
 	{
