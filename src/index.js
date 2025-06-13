@@ -83,18 +83,22 @@ class About extends React.Component {
 							<u>About Me</u>
 						</h1>
 						<p>
-							I am a <b>Mechatronics Engineering</b> graduate from the
-							University of Waterloo. I <b>started programming in 2012</b> and
-							am skilled in many areas such as{" "}
-							<b>full stack, mobile, desktop and firmware development</b>. I use
-							a variety of programming languages and I'm always learning more. I
-							am continually looking for opportunities to expand my knowledge in
-							all areas. Currently I would like to focus on{" "}
-							<b>mechanical and electrical design</b> as these two areas
-							fascinate me the most. I am doing this by working on woodworking
-							and PCB design projects. I enjoy playing a variety of sports and
-							outdoor activities. I am a passionate, enthusiastic, problem
-							solver with excellent collaborative and interpersonal skills.
+							Hello, I am a <b>Mechatronics Engineering</b> graduate from the
+							University of Waterloo. In 2012 I started programming and over the
+							years have used a variety of languages and I am always learning
+							more. I am skilled in many areas of programming such as firmware,
+							full stack, mobile and desktop development. Currently my focus is
+							on building <b>firmware and embedded systems </b>
+							because I am interested in the challenges that come with
+							<b> integrating electromechanical systems</b>. One of the ways I
+							am improving my firmware skills is by working on personal projects
+							that involve <b>electrical and mechanical design</b>. For example,
+							I built a computer mouse from scratch which involved PCB design,
+							firmware, 3D printing, and woodworking. Besides building things, I
+							enjoy playing a variety of sports and outdoor activities such as
+							ultimate and surfing. I am always <b>ready to learn</b> and
+							enthusiastically tackle problems with excellent collaborative and
+							interpersonal skills.
 						</p>
 						<div id="Links">
 							<button onClick={this.goToProjects}>
